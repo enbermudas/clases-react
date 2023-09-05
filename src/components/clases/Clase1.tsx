@@ -1,7 +1,7 @@
 import { useState } from "react";
 
-import Navbar from "./Navbar";
-import Button from "./Button";
+import Navbar from "../Navbar";
+import Button from "../Button";
 
 // Base de datos de mentiritas
 

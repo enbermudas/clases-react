@@ -19,9 +19,9 @@
 
 **PARTE 1:**
 
-- Crear un componente llamado **Actividad1** dentro de /components/
+- Crear un componente llamado **Actividad** dentro de `/components/actividades/actividad1`
 
-- Crear un nuevo componente llamado **Profile** dentro de /components/
+- Crear un nuevo componente llamado **Profile** dentro de `/components/actividades/actividad1`
   - Debe recibir como props: (definir ustedes mismo los tipos)
     - id
     - firstName
@@ -39,13 +39,13 @@
 
   - Si age es menor a 18, renderizar "puedes tomar tetero"
 
-- Importar el componente **Profile** dentro **Actividad1**
+- Importar el componente **Profile** dentro **Actividad**
 
-- Importar el componente **Actividad1** dentro de **App**
+- Importar el componente **Actividad** dentro de **App**
 
 **PARTE 2:**
 
-- Renderizar una lista de múltiples **Profile** dentro de **Actividad1**
+- Renderizar una lista de múltiples **Profile** dentro de **Actividad**
 
 **PARTE 3:**
 
