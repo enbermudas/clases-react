@@ -1,13 +1,25 @@
-import Clase2 from "./components/clases/Clase2";
+import { useState } from "react";
+
+import NoMeDesmontes from "./components/NoMeDesmontes";
 
 import "./App.css";
 
 export default function App() {
-  return (
-    <>
-      <div id="app">
-        <Clase2/>
-      </div>
-    </>
-  )
+  const [mostrar, setMostrar] = useState<boolean>(true);
+
+  if (mostrar) {
+    return (
+      <>
+        <button onClick={() => setMostrar(false)}>Cambiar</button>
+        <NoMeDesmontes message="Miguelito"/>
+      </>
+      )
+  } else {
+    return (
+      <>
+        <button onClick={() => setMostrar(true)}>Cambiar</button>
+        <NoMeDesmontes message="Kikito"/>
+      </>
+    )
+  }
 }
