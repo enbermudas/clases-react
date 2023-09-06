@@ -19,7 +19,7 @@
 ## Reglas de Hooks
 - Solo pueden utilizarse DENTRO de un componente JSX
 
-## Actividades
+## Actividades (Clase 1)
 
 ### Actividad 1
 
@@ -58,3 +58,33 @@
 - Agregar un botón de **Profile** para que, al hacer click sobre él:
   - Haga un console log donde se muestre un mensaje con la siguiente forma: `id: email`
   - Ejemplo: `1: kike@email.com`
+
+---
+
+## Actividades (Clase 2)
+
+### Actividad 1
+
+**PARTE 1:**
+
+- Crear el directorio `actividades2` dentro de `/components/actividades/`
+
+- Crear un componente llamado **Actividad** `/components/actividades/actividad2/`
+  - Crear una función dentro de **Actividad** que recibe como parámetro `mensaje`
+  - Al ser invocada, la función debe hacer console log de `mensaje`
+
+- Agregar un `button` dentro del componente **Actividad**
+
+- TODO
+
+**PARTE 2:**
+
+- Crear un componente llamado **Boton** en `/components/actividades/actividad2/` y debe recibir como props:
+  - texto (string) [lo que dice el botón]
+  - manejarClick (funcion)
+
+- Al hacer click en el botón, debe llamar a la función que se pasó como prop: `manejarClick`
+
+- A esa función, se le debe pasar como parámetro: `texto`
+
+- Renderizar múltiples botones (el componente **Boton**) que reciban distintos textos
