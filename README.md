@@ -70,21 +70,31 @@
 - Crear el directorio `actividades2` dentro de `/components/actividades/`
 
 - Crear un componente llamado **Actividad** `/components/actividades/actividad2/`
-  - Crear una función dentro de **Actividad** que recibe como parámetro `mensaje`
+  - Crear una función llamada `saludar` dentro de **Actividad** que recibe como parámetro `mensaje`
   - Al ser invocada, la función debe hacer console log de `mensaje`
 
 - Agregar un `button` dentro del componente **Actividad**
 
-- TODO
+- El button debe, al hacer clic en él, llamar a la función `saludar`, pasando un mensaje (a elección de cada quien) a la función
 
 **PARTE 2:**
 
-- Crear un componente llamado **Boton** en `/components/actividades/actividad2/` y debe recibir como props:
+- Crear un componente llamado **Boton** en `/components/actividades/actividad2/` que debe recibir como props:
   - texto (string) [lo que dice el botón]
+  - mensaje (string)
   - manejarClick (funcion)
 
 - Al hacer click en el botón, debe llamar a la función que se pasó como prop: `manejarClick`
 
-- A esa función, se le debe pasar como parámetro: `texto`
+- A esa función se le debe pasar como parámetro: `texto`
+
+- Utilizar ese componente `Boton` para reemplazar el código de la **Parte 1**
+  - El prop `manejarClick` será la función `saludar` creada en la **Parte 1**
+
+**PARTE 3:**
 
 - Renderizar múltiples botones (el componente **Boton**) que reciban distintos textos
+  - Tips:
+    - Crear un arreglo de objetos ( dentro de **Actividad**) con la información de cada botón
+    - Mapear ese arreglo dentro de **Actividad**
+    - Renderizar un **Boton** para cada objeto
