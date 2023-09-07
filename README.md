@@ -98,3 +98,60 @@
     - Crear un arreglo de objetos ( dentro de **Actividad**) con la información de cada botón
     - Mapear ese arreglo dentro de **Actividad**
     - Renderizar un **Boton** para cada objeto
+
+---
+
+## Actividades (Clase 3)
+
+### Actividad 1
+
+Crear el directorio `actividades3` dentro de `/components/actividades/`
+
+Crear un componente llamado **Actividad** `/components/actividades/actividad3/`
+
+Importar (y renderizar) el componente **Actividad** dentro de `App.tsx`
+
+Realizar una consulta/fetchear (GET) la data del siguiente endpoint: `https://pokeapi.co/api/v2/pokemon/` utilizando `useEffect`
+
+Crear un `ul` dentro del cual cada `li` debe mostrar el nombre del pokémon y la url del mismo en el siguiente formato:
+
+```html
+<ul>
+  <li>Bulbasaur: https://pokeapi.co/api/v2/pokemon/1/</li>
+  <li>Ivysaur: https://pokeapi.co/api/v2/pokemon/2/</li>
+  <li>Venusaur: https://pokeapi.co/api/v2/pokemon/3/</li>
+  ...
+</ul>
+```
+
+Mientras se está fetcheando la data, se debe renderizar lo siguiente:
+
+```html
+<h1>Buscando información...</h1>
+```
+### Actividad 2
+
+Repetir todo lo hecho anteriormente, pero:
+
+La data debe fetchearse cuando el usuario haga click en un botón:
+
+```html
+<button>Buscar datos!</button>
+```
+
+### Opcional
+
+Crear un componente en el que exista un input y un boton:
+
+```html
+<input type="text" placeholder="Escribir un id"/>
+<button>Buscar datos!</button>
+```
+
+En ese input, el usuario debe escribir el ID de un pokémon. Por ejemplo, 1 para Bulbasaur
+
+Una vez se haga click en el botón, se debe fetchear la data de ese pokémon
+
+Hay que darle feedback al usuario de que está se está fetcheando la data
+
+Hay que darle feedback al usuario en caso de error (por ejemplo, escribir un ID inexistente como 1290379081274124)
