@@ -3,9 +3,9 @@
 
 ## Tablón
 
-**Soto**: ❤️
-**Bastidas**: 💩
-**Torres**: 💩
+**Soto**: ❤️❤️
+**Bastidas**: 💩❤️
+**Torres**: 💩❤️
 
 ## Reglas de JSX
 - No usar palabras reservadas como atributos (for = htmlFor, class = className)
