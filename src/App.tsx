@@ -1,7 +1,7 @@
-import Clase4 from "./components/clases/Clase4";
+import Clase5 from "./components/clases/Clase5";
 
 import "./App.css";
 
 export default function App() {
-  return <Clase4 />;
+  return <Clase5 />;
 }
