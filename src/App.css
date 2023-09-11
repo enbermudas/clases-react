@@ -6,3 +6,13 @@
 #app {
   padding: 20px;
 }
+
+.pokeform {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.pokeform input {
+  padding: 10px 5px;
+}
