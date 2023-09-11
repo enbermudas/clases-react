@@ -21,7 +21,7 @@ export default function Clase2() {
     // Le das un feedback al usuario
     // ????
     // Profit
-  }
+  };
 
   return (
     <form onSubmit={handleSubmit}>
@@ -36,14 +36,16 @@ export default function Clase2() {
         label="Correo"
         identificador="email"
         value={email}
-        manejarCambio={setEmail} type="email"
+        manejarCambio={setEmail}
+        type="email"
       />
 
       <Input
         label="Contraseña"
         identificador="password"
         value={password}
-        manejarCambio={setPassword} type="password"
+        manejarCambio={setPassword}
+        type="password"
       />
 
       <Input
@@ -55,5 +57,5 @@ export default function Clase2() {
 
       <button type="submit">Enviar</button>
     </form>
-  )
+  );
 }
