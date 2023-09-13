@@ -164,3 +164,32 @@ Una vez se haga click en el botón, se debe fetchear la data de ese pokémon
 Hay que darle feedback al usuario de que está se está fetcheando la data
 
 Hay que darle feedback al usuario en caso de error (por ejemplo, escribir un ID inexistente como 1290379081274124)
+
+---
+
+## Clase 6.5
+
+- Crear un formulario :D
+
+- Debe tener los campos:
+  name
+  status (alive, dead, unknown)
+  gender (female, male, genderless, unknown)
+
+- Debe tener un botón de submit que, al hacer click en él, haga fetch a API de Ricky Martin:
+  https://rickandmortyapi.com/api/character/
+
+- Este endpoint puede recibir parámetros de búsqueda, por ejemplo:
+  https://rickandmortyapi.com/api/character/?name=rick&status=alive
+
+- La idea es QUEEEEEE... Al hacer click en el botón de submit:
+
+  - Se haga el fetch con lo que el usuario haya escrito en cada campo
+  - Traiga la data de la API y los muestre en pantalla
+  - En caso de que la API no consiga datos (ejemplo, asginar "salchichon" en name), darle feedback de ello al usuario
+
+- La API solo acepta status si el valor es: alive, dead o unkown (validar)
+
+- La API solo acepta gender si el valor es: female, male, genderless o unknown (validar)
+
+- Usar useReducer para manejar el estado del formulario (valores de cada campo)
