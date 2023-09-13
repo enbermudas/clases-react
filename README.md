@@ -1,13 +1,15 @@
 # loldle
+
 > Las clases calidah
 
 ## Tablón
 
-**Soto**: ❤️❤️❤️
-**Bastidas**: 💩❤️💩
-**Torres**: 💩❤️💩
+**Soto**: ❤️❤️❤️❤️
+**Bastidas**: 💩❤️💩❤️
+**Torres**: 💩💩💩💩
 
 ## Reglas de JSX
+
 - No usar palabras reservadas como atributos (for = htmlFor, class = className)
 
 - Solo puedes retornar un elemento padre (los parentesis abren un nuevo scope)
@@ -17,6 +19,7 @@
 - No se debe INVOCAR al manejador dentro de los eventos
 
 ## Reglas de Hooks
+
 - Solo pueden utilizarse DENTRO de un componente JSX
 
 ## Actividades (Clase 1)
@@ -28,7 +31,9 @@
 - Crear un componente llamado **Actividad** dentro de `/components/actividades/actividad1`
 
 - Crear un nuevo componente llamado **Profile** dentro de `/components/actividades/actividad1`
+
   - Debe recibir como props: (definir ustedes mismo los tipos)
+
     - id
     - firstName
     - lastName
@@ -39,6 +44,7 @@
   - Renderizar todos los props (como ustedes quieran)
 
   - El campo nickname no es obligatorio
+
     - En caso de que el componente reciba "nickname", renderizar el campo en lugar de firstName y lastName
 
   - Si age es mayor (o igual) a 18, renderizar "puedes tomar cerveza"
@@ -70,6 +76,7 @@
 - Crear el directorio `actividades2` dentro de `/components/actividades/`
 
 - Crear un componente llamado **Actividad** `/components/actividades/actividad2/`
+
   - Crear una función llamada `saludar` dentro de **Actividad** que recibe como parámetro `mensaje`
   - Al ser invocada, la función debe hacer console log de `mensaje`
 
@@ -80,6 +87,7 @@
 **PARTE 2:**
 
 - Crear un componente llamado **Boton** en `/components/actividades/actividad2/` que debe recibir como props:
+
   - texto (string) [lo que dice el botón]
   - mensaje (string)
   - manejarClick (funcion)
@@ -129,6 +137,7 @@ Mientras se está fetcheando la data, se debe renderizar lo siguiente:
 ```html
 <h1>Buscando información...</h1>
 ```
+
 ### Actividad 2
 
 Repetir todo lo hecho anteriormente, pero:
@@ -144,7 +153,7 @@ La data debe fetchearse cuando el usuario haga click en un botón:
 Crear un componente en el que exista un input y un boton:
 
 ```html
-<input type="text" placeholder="Escribir un id"/>
+<input type="text" placeholder="Escribir un id" />
 <button>Buscar datos!</button>
 ```
 
