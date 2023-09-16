@@ -1,7 +1,9 @@
 import "./App.css";
 
-import PseudoClase7 from "./components/clases/PseudoClase7";
+import Clase8P2 from "./components/clases/Clase8P2";
 
 export default function App() {
-  return <PseudoClase7/>;
+  return (
+    <Clase8P2 />
+  )
 }
