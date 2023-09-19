@@ -1,6 +1,5 @@
 import { useState } from "react";
 
-import Navbar from "../Navbar";
 import Button from "../Button";
 
 // Base de datos de mentiritas
@@ -37,9 +36,7 @@ export default function Clase1() {
 
   // Los componentes de React (funciones) deben retonar código JSX válido (leer README)
   return (
-    <>
-      <Navbar id={1} username={username} />
-
+    <div id="clase1">
       {/* Renderizado de listas */}
       <ul>
         {
@@ -59,6 +56,6 @@ export default function Clase1() {
 
       {/* Manejar eventos en componentes */}
       <input type="text" onChange={handleOnChange} />
-    </>
+    </div>
   )
 }
